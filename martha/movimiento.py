@@ -23,7 +23,7 @@ class movimiento(Node):
   
 	def listener_callback(self, msg):
 		self.get_logger().info("enviando")
-		self.enviar_serial(msg.axes[1], 0.0, msg.axes[0])
+		self.enviar_serial(msg.axes[1], msg.axes[0], msg.axes[3])
 	
 	def enviar_serial(self, x, y, z):
 		message = struct.pack(
