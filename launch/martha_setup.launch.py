@@ -14,3 +14,8 @@ def generate_launch_description():
             name='movimiento'
         ),
     ])
+    
+    
+##
+# How to Run: ros2 launch martha martha_setup.launch.py
+##
